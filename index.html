@@ -99,6 +99,80 @@ margin: auto;
 ================================================
 ================================================ */
 
+
+/* ВЕРХНЕЕ МЕНЮ */
+
+.header {
+  position: relative;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  background-color: white;
+  height: 78px;
+  width: 100%;
+}
+
+
+.leftheaderpart {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logoblue {
+  margin-right: 61px;
+}
+
+
+
+.horizmenuleft, .horizmenuright {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.horizmenuleft {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 529px;
+}
+.horizmenuleft .horizmenuitem {
+  margin-right: 26px;
+}
+
+
+
+
+.horizmenuright {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 241px;
+}
+.horizmenuright .horizmenuitem {
+  margin-left: 26px;
+}
+
+
+
+.horizmenuitem {
+  text-align: center;
+  flex: none;
+  padding: 0;
+}
+
+
+/* =============================================
+================================================ */
+
 /* СЕКЦИЯ "КУДА ПОЛЕТИМ?" */
 
 .kuda {
@@ -125,6 +199,7 @@ margin: auto;
 
 /* =============================================
 ================================================ */
+
 /* СЕКЦИЯ "Частная авиация для свободных людей" */
 
 .chastnaya {
@@ -133,6 +208,16 @@ background-color: rgba(81, 147, 168, 1);
 height: auto;
 padding-top: 20px;
 padding-bottom: 80px;
+}
+
+.twopoints {
+  margin: 0 auto;
+}
+
+.ch1, .ch2 {
+  max-width: 1500px;
+  display: inline-block;
+  text-align: top;
 }
 
 /* =============================================
@@ -406,6 +491,28 @@ mode h3 {
 
 
 
+<div class="header">
+  <div class="leftheaderpart">
+  <div class="logoblue"><img src="images/logoblue.svg" alt=""></div>
+    <div class="horizmenuleft">
+      <div class="horizmenuitem">Поиск</div>
+      <div class="horizmenuitem">Сезонные предложения</div>
+      <div class="horizmenuitem">Джеты</div>
+      <div class="horizmenuitem">Шеринг</div>
+      <div class="horizmenuitem">Расписание Empty Legs</div>
+      </div>
+  </div>
+
+  <div class="horizmenuright">
+    <img src="images/heart.svg" alt="">
+    <div class="horizmenuitem">Поддержка</div>
+    <div class="horizmenuitem">Войти</div></div>
+</div>
+
+
+
+
+
 <div class="kuda">
   <h1 class = "mainblue">Куда полетим?</h1>
   <div class="plashka"></div>
@@ -415,8 +522,12 @@ mode h3 {
 
 <div class="chastnaya">
   <h1 class="white">Частная авиация для свободных людей</h1>
-    <h2 class="white">Бизнес-джеты, джет-шеринг, Empty Legs, бизнес-класс</h2>
-    <h2 class="white">Сравнивайте цены и бронируйте лучшее</h2>
+    <div class="twopoints">
+      <div class="ch1">
+        <h2 class="white">Бизнес-джеты, джет-шеринг, Empty Legs, бизнес-класс</h2></div>
+      <div class="ch2">
+        <h2 class="white">Сравнивайте цены и бронируйте лучшее</h2></div>
+    </div>
 </div>
 
 
